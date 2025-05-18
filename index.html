@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Matheus Longen | Portfólio</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="script.js"></script>
+    </head>
+      
+    <body class="min-h-screen">
+    <nav class="navbar">
+            <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-400 orbitron">Matheus Longen</div>
+
+                <div class="hidden md:flex space-x-6">
+                    <a href="#objetivo" class="navbar-links">Objetivo</a>
+                    <a href="#habilidades" class="navbar-links">Habilidades</a>
+                    <a href="#experiencia" class="navbar-links">Experiência</a>
+                    <a href="#formacao" class="navbar-links">Formação</a>
+                    <a href="#idiomas" class="navbar-links">Idiomas</a>
+                    <a href="#projetos" class="navbar-links">Projetos</a>
+                    <a href="#contato" class="navbar-links">Contato</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none transition-transform duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="md:hidden px-6 pb-4 hidden transition-all duration-300 ease-in-out">
+                <a href="#objetivo" class="mobile-links">Objetivo</a>
+                <a href="#habilidades" class="mobile-links">Habilidades</a>
+                <a href="#experiencia" class="mobile-links">Experiência</a>
+                <a href="#formacao" class="mobile-links">Formação</a>
+                <a href="#idiomas" class="mobile-links">Idiomas</a>
+                <a href="#projetos" class="mobile-links">Projetos</a>
+            </div>
+        </nav>
+
+    
+        <header class="header">
+            <div class="relative z-10">
+                <h1>
+                    <span id="typed-text"></span>
+                </h1>
+            </div>
+
+            <p>
+                Desenvolvedor Full-Stack apaixonado por soluções web modernas
+            </p>
+        </header>
+    
+        
+        <main class="main-content">
+            <!-- Objetivo -->
+            <section id="objetivo" class="section" data-aos="fade-right">
+                <h2 class="titulo">Objetivo</h2>
+                <p class="mt-2">Aplicar e evoluir minhas habilidades em desenvolvimento web, contribuindo com soluções criativas e impactantes.</p>
+            </section>
+        
+            <!-- Habilidades Técnicas -->
+            <section id="habilidades" class="section" data-aos="fade-right">
+                <h2 class="titulo">Habilidades Técnicas</h2>
+                <div class="mt-4 space-y-6">
+                    <!-- Linguagens -->
+                    <div class="flex items-center space-x-4">
+                        <i class="fab fa-cuttlefish text-2xl text-blue-400"></i>
+                        <div class="flex flex-col">
+                            <strong class="text-lg">Linguagens:</strong>
+                            <span>C#, JavaScript, PHP</span>
+                        </div>
+                    </div>
+                    <!-- Web -->
+                    <div class="flex items-center space-x-4">
+                        <i class="fab fa-react text-2xl text-blue-400"></i>
+                        <div class="flex flex-col">
+                            <strong class="text-lg">Web:</strong>
+                            <span>HTML, CSS, React, Vue.js</span>
+                        </div>
+                    </div>
+                    <!-- Banco de Dados -->
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-database text-2xl text-blue-400"></i>
+                        <div class="flex flex-col">
+                            <strong class="text-lg">Banco de Dados:</strong>
+                            <span>SQL, NoSQL, MySQL</span>
+                        </div>
+                    </div>
+                    <!-- Ferramentas -->
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-tools text-2xl text-blue-400"></i>
+                        <div class="flex flex-col">
+                            <strong class="text-lg">Ferramentas:</strong>
+                            <span>VS, Git, Postman, Jenkins, Laravel</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Experiência Profissional -->
+            <section id="experiencia" class="section" data-aos="fade-right">
+                <h2 class="titulo">Experiência Profissional</h2>
+                <div class="mt-4 space-y-4">
+                    <!-- 8Quali -->
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-building text-2xl text-blue-400"></i>
+                        <div>
+                            <h3 class="text-lg font-bold text-blue-300">8Quali (Mai/2024 – Abr/2025)</h3>
+                            <ul class="list-disc list-inside ml-4">
+                                <li> Desenvolvimento com .NET MVC, MAUI, JavaScript</li>
+                                <li> Gráficos interativos e editor de arquivos online</li>
+                                <li> Importação/exportação de planilhas</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <!-- Benner Sistemas -->
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-building text-2xl text-blue-400"></i>
+                        <div>
+                            <h3 class="text-lg font-bold text-blue-300">Benner Sistemas (Fev/2023 – Mai/2024)</h3>
+                            <ul class="list-disc list-inside ml-4">
+                                <li> Web apps com C#, JavaScript, HTML e CSS</li>
+                                <li> Revisões de código, otimização de desempenho e correção de bugs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>        
+        
+            <!-- Formação Acadêmica -->
+            <section id="formacao" class="section" data-aos="fade-right">
+                <h2 class="titulo">Formação Acadêmica</h2>
+                <ul class="list-disc list-inside ml-4 mt-2">
+                    <li>
+                        <i class="fas fa-university text-blue-400"></i> 
+                        Análise e Desenvolvimento de Sistemas - UniSociesc (cursando)
+                    </li>
+                    <li>
+                        <i class="fas fa-certificate text-blue-400"></i> 
+                        C# e Banco de Dados - Entra21 (2022)
+                    </li>
+                    <li>
+                        <i class="fas fa-laptop-code text-blue-400"></i> 
+                        React, Vue.js, Flutter - Alura (2023)
+                    </li>
+                    <li>
+                        <i class="fas fa-book text-blue-400"></i> 
+                        PHP e MySQL - Udemy (2025)
+                    </li>
+                </ul>
+            </section>        
+        
+            <!-- Idiomas -->
+            <section id="idiomas" class="section" data-aos="fade-right">
+                <h2 class="titulo">Idiomas</h2>
+
+                <p class="mt-2 text-white flex items-center gap-4">
+                    <span class="flex items-center gap-2">
+                    <img src="https://flagcdn.com/w20/br.png" alt="Brasil" class="w-5 h-4 rounded-sm"> Português (Nativo)
+                    </span>
+                    <span class="flex items-center gap-2">
+                    <img src="https://flagcdn.com/w20/us.png" alt="EUA" class="w-5 h-4 rounded-sm"> Inglês (Avançado)
+                    </span>
+                </p>              
+            </section>
+            
+        
+            <!-- Projetos em Destaque -->
+            <section id="projetos" class="section" data-aos="fade-right">
+                <h2 class="titulo mb-4">Projetos de Destaque em que Trabalhei</h2>
+
+                <div class="flex justify-between mb-4">
+                    <button onclick="mudarSlide(-1)" class="bg-gray-700 px-4 py-2 rounded">←</button>
+                    <button onclick="mudarSlide(1)" class="bg-gray-700 px-4 py-2 rounded">→</button>
+                </div>
+                
+                <!-- Slide 1 -->
+                <div id="slide1" class="grid md:grid-cols-3 gap-6 projeto-slide">
+                    <div class="card project-card group relative">
+                        <img src="Arquivos/dashboard.webp" alt="Dashboard" class="rounded mb-3">
+
+                        <div class="titulo-projeto">
+                            <i class="fas fa-chart-line mr-2"></i>
+                            <h3 class="font-semibold text-lg">Dashboards</h3>
+                        </div>
+
+                        <p class="text-sm text-gray-400">Gráficos interativos com filtros dinâmicos.</p>
+                        <div class="tooltip">Tecnologias: .NET MVC, Chart.js, JavaScript e Razzor</div>
+                    </div>
+
+                    <div class="card project-card group relative">
+                        <img src="Arquivos/apps.avif" alt="Editor Online" class="rounded mb-3">
+
+                        <div class="titulo-projeto">
+                            <i class="fas fa-mobile-alt mr-2"></i>
+                            <h3 class="font-semibold text-lg">App de sistema ERP</h3>
+                        </div>
+                        
+                        <p class="text-sm text-gray-400">Aplicativo de um sistema de ERP completo com múltiplas funções.</p>
+                        <div class="tooltip">Tecnologias: PHP, MySQL, Dart (Flutter) e .NET MVC</div>
+                    </div>
+
+                    <div class="card project-card group relative">
+                        <img src="Arquivos/kanban.png" alt="Kanban" class="rounded mb-3">
+
+                        <div class="titulo-projeto">
+                            <i class="fas fa-tasks mr-2"></i>
+                            <h3 class="font-semibold text-lg">Kanban Interativo</h3>
+                        </div>
+
+                        <p class="text-sm text-gray-400">Board de tarefas com drag-and-drop e atualização em tempo real.</p>
+                        <div class="tooltip">Tecnologias: Angular, TypeScript, .NET MVC e JavaScript</div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div id="slide2" class="grid md:grid-cols-3 gap-6 projeto-slide hidden">
+                    <div class="card project-card group relative">
+                        <img src="Arquivos/automacao.avif" alt="Automacao" class="rounded mb-3">
+
+                        <div class="titulo-projeto">
+                            <i class="fas fa-cogs mr-2"></i>
+                            <h3 class="font-semibold text-lg">Automação de Processos</h3>
+                        </div>
+
+                        <p class="text-sm text-gray-400">Rotinas que reduziram trabalho manual, incluindo geração automática de relatórios, envio de e-mails e backups.</p>
+                        <div class="tooltip">Tecnologias: .NET MVC, JavaScript e API's da Microsoft (consumo)</div>
+                    </div>
+
+                    <div class="card project-card group relative">
+                        <img src="Arquivos/migracao.jpg" alt="Migração de Sistema" class="rounded mb-3">
+
+                        <div class="titulo-projeto">
+                            <i class="fas fa-sync-alt mr-2"></i>
+                            <h3 class="font-semibold text-lg">Migração de Sistema Legado</h3>
+                        </div>
+
+                        <p class="text-sm text-gray-400">Transformei um sistema antigo feito em Delphi para C# .NET, melhorando o desempenho e criando uma interface nova, mais moderna e fácil de usar.</p>
+                        <div class="tooltip">Tecnologias: C# .NET, Delphi, SQL Server</div>
+                    </div>
+
+                    <div class="card project-card group relative">
+                        <img src="Arquivos/IA.png" alt="Recomendações com IA" class="rounded mb-3">
+
+                        <div class="titulo-projeto">
+                            <i class="fas fa-gift mr-2"></i>
+                            <h3 class="font-semibold text-lg">IA para Recomendar Presentes</h3>
+                        </div>
+
+                        <p class="text-sm text-gray-400">
+                            Projeto feito com mais desenvolvedores: O usuário digitava um @ do Instagram e a IA analisava o perfil 
+                            pra entender os gostos da pessoa e sugerir presentes do nosso banco de dados. Usamos um perfil fake no Instagram com automações via Selenium 
+                            pra simular a navegação e extrair as informações.
+                        </p>
+                        
+                        <div class="tooltip">Tecnologias: C# .NET, Selenium, IA generativa, Web Scraping, Banco de Dados (AWS), React</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contato -->
+            <section id="contato" class="section" data-aos="fade-right">
+                <h2 class="titulo">Contatos</h2>
+                <ul class="contato-lista">
+                    <li class="relative">
+                        <i class="fas fa-envelope"></i>
+                        <span id="email" onclick="copiarEmail()" class="email-link">
+                            matheuslongen29@gmail.com
+                        </span>
+                        <div id="notificacao" class="notificacao hidden">✔ Copiado!</div>
+                    </li>
+
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/MatheusLongen" target="_blank">GitHub</a>
+                    </li>
+
+                    <li>
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/matheus-longen-2a413b247" target="_blank">Linkedin</a>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Blumenau, SC
+                    </li>
+
+                    <li>
+                        <i class="fas fa-file-download"></i>
+                        <a href="animacoes/Curriculo%20Matheus%20Longen.pdf" download>Baixar Currículo</a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+                
+
+        <footer class="w-full py-6 text-center text-gray-500 mt-12">
+            &copy; 2025 Matheus Longen
+        </footer>
+
+        <script>
+            var typed = new Typed('#typed-text', {
+            strings: ['Matheus Longen', 'Desenvolvedor Full-Stack', 'Criador de Soluções Web'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+            });
+
+            const btn = document.getElementById('menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            document.querySelectorAll('.project-card').forEach(card => {
+                card.addEventListener('mouseover', () => {
+                    card.classList.add('hovered');
+                });
+
+                card.addEventListener('mouseout', () => {
+                    card.classList.remove('hovered');
+                });
+            });
+
+            AOS.init({
+                duration: 800,
+                once: false
+            });
+
+            let slideAtual = 1;
+            const totalSlides = document.querySelectorAll('.projeto-slide').length;
+
+            function mudarSlide(direcao) {
+                document.getElementById(`slide${slideAtual}`).classList.add('hidden');
+                slideAtual += direcao;
+                if (slideAtual > totalSlides) slideAtual = 1;
+                if (slideAtual < 1) slideAtual = totalSlides;
+                document.getElementById(`slide${slideAtual}`).classList.remove('hidden');
+            }
+
+            function copiarEmail() {
+                const email = "matheuslongen29@gmail.com";
+                navigator.clipboard.writeText(email).then(() => {
+                    const notif = document.getElementById('notificacao');
+                    notif.classList.remove('hidden');
+                    setTimeout(() => {
+                    notif.classList.add('hidden');
+                    }, 2000);
+                });
+            }
+        </script>
+    </body>
+</html>

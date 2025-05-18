@@ -1,0 +1,241 @@
+body {
+    font-family: 'Fira Code', monospace;
+    background: radial-gradient(circle at top left, #0f172a, #0e0e10);
+    color: #e2e8f0;
+    padding-top: 80px;
+}
+
+.accent {
+    color: #60a5fa;
+}
+
+.section {
+    backdrop-filter: blur(10px);
+    background-color: rgba(17, 24, 39, 0.7);
+    border: 1px solid #1e293b;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card.hovered {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(17, 24, 39, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+
+.navbar-links {
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-links:hover {
+  color: #60a5fa;
+  border-bottom-color: #60a5fa;
+}
+
+.mobile-links {
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+  font-weight: 600;
+  border-bottom: 1px solid #374151;
+  transition: all 0.3s;
+}
+
+.mobile-links:hover {
+  color: #60a5fa;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('Arquivos/fundo.avif');
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  z-index: 0;
+}
+
+.header * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.header h1 {
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #60a5fa;
+  transition: opacity 1s;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.header p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s;
+  transform: scale(1);
+  font-family: 'Orbitron', sans-serif;
+}
+
+.header p:hover {
+  transform: scale(1.05);
+}
+
+.titulo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #60a5fa;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 0.375rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 0.75rem;
+}
+
+.group:hover .tooltip {
+  opacity: 1;
+}
+
+.titulo-projeto {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: #60a5fa;
+  font-size: 1.25rem;
+}
+
+.card {
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+
+.main-content {
+  width: 100%;
+  max-width: 96rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contato-lista {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  color: white;
+}
+
+.contato-lista li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.contato-lista a {
+  color: white;
+  text-decoration: none;
+}
+
+.contato-lista a:hover {
+  text-decoration: underline;
+}
+
+.email-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.notificacao {
+  position: absolute;
+  top: -30px;
+  left: 30px;
+  background-color: #4ade80;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+
+@media (max-width: 600px) {
+  .contato-lista {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .contato-lista li {
+    justify-content: center;
+    width: 100%;
+  }
+}
